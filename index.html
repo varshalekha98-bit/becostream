@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bharat EcoStream - Hydroponics & Sustainable Farming</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <style>
+    body { scroll-behavior: smooth; font-family: 'Segoe UI', sans-serif; }
+
+    /* Parallax Sections */
+    .parallax {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      will-change: background-position;
+    }
+
+    /* Hero Section */
+    #landing {
+      background-image: url('https://t4.ftcdn.net/jpg/07/55/05/83/360_F_755058302_WC2qz000mT1y8E5G1iSJLZkQ7t1Vhg88.jpg');
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #landing::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    #landing .content {
+      position: relative;
+      z-index: 2;
+      animation: fadeScale 1.5s ease-out forwards;
+      opacity: 0; /* start hidden */
+      transform: scale(0.95); /* start slightly smaller */
+    }
+    @keyframes fadeScale {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .stat-box {
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px;
+      backdrop-filter: blur(5px);
+    }
+
+    /* Info Section */
+    #info {
+      padding: 60px 20px;
+    }
+    .info-icon {
+      font-size: 40px;
+      color: #28a745;
+      margin-bottom: 15px;
+    }
+
+    /* Contact Section */
+    #contact {
+      background-image: url('https://images.unsplash.com/photo-1606788075761-9b8e8d6e1d3b?auto=format&fit=crop&w=1600&q=80');
+      padding: 60px 20px;
+      color: white;
+      position: relative;
+    }
+    #contact::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    #contact .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Mobile fix for parallax */
+    @media (max-width: 768px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero / Landing View -->
+<section id="landing" class="parallax">
+  <div class="container content">
+    <h1 class="display-4 fw-bold">Join the Agricultural Revolution</h1>
+    <p class="lead mb-4">Partner with us to scale sustainable hydroponic farming solutions.</p>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-2 stat-box" data-aos="zoom-in" data-aos-delay="100">
+        <h4>12% CAGR</h4>
+        <small>Market Growth</small>
+      </div>
+      <div class="col-6 col-md-2 stat-box" data-aos="zoom-in" data-aos-delay="200">
+        <h4>25-35%</h4>
+        <small>ROI Potential</small>
+      </div>
+      <div class="col-6 col-md-2 stat-box" data-aos="zoom-in" data-aos-delay="300">
+        <h4>Growing</h4>
+        <small>Global Demand</small>
+      </div>
+      <div class="col-6 col-md-2 stat-box" data-aos="zoom-in" data-aos-delay="400">
+        <h4>100%</h4>
+        <small>Sustainability</small>
+      </div>
+    </div>
+    <a href="#contact" class="btn btn-success btn-lg mt-4" data-aos="fade-up" data-aos-delay="500">Invest With Us</a>
+  </div>
+</section>
+
+<!-- Information Section -->
+<section id="info" class="container text-center">
+  <h2 class="mb-5" data-aos="fade-up">Why Choose Hydroponic Farming?</h2>
+  <div class="row g-4">
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="info-icon">💧</div>
+      <h5>90% Less Water</h5>
+      <p>Our systems recycle water efficiently, drastically reducing usage.</p>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="info-icon">🌱</div>
+      <h5>Pesticide-Free</h5>
+      <p>Clean, controlled environments ensure healthy, chemical-free crops.</p>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="info-icon">⚙️</div>
+      <h5>Smart Technology</h5>
+      <p>AI-powered monitoring optimizes growth and detects issues instantly.</p>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+      <div class="info-icon">♻️</div>
+      <h5>Sustainable</h5>
+      <p>Closed-loop systems minimize waste and environmental impact.</p>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+      <div class="info-icon">📈</div>
+      <h5>Higher Yields</h5>
+      <p>Optimized nutrients produce up to 3x more than traditional farming.</p>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+      <div class="info-icon">🌞</div>
+      <h5>Year-Round Growing</h5>
+      <p>Climate control enables consistent production in any season.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="parallax">
+  <div class="container text-center content" data-aos="fade-up">
+    <h2 class="mb-4">Ready to Grow Your Investment?</h2>
+    <p class="lead mb-4">Be part of the solution to global food security while generating strong returns.</p>
+    <a href="#" id="investLink" class="btn btn-light btn-lg">Contact Us for Investment Details</a>
+    <p id="emailDisplay" class="mt-3 fw-bold" style="display:none;"></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3 bg-dark text-white">
+  &copy; 2025 Bharat EcoStream. All Rights Reserved.
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  // Reveal email on click
+  $("#investLink").on("click", function(e) {
+    e.preventDefault();
+    $("#emailDisplay").text("info@bharatecostream.info").fadeIn();
+  });
+
+  // Subtle JS Parallax Effect
+  $(window).on('scroll', function() {
+    let scrolled = $(window).scrollTop();
+    $('.parallax').each(function() {
+      let speed = 0.4; // Adjust for more/less movement
+      let yPos = -(scrolled * speed);
+      $(this).css('background-position', 'center ' + yPos + 'px');
+    });
+  });
+</script>
+</body>
+</html>
